@@ -239,9 +239,10 @@ For the tenth image, the model is sure that this is a sign Ahead only(prob of 1.
 
 
 ### (Optional) Visualizing the Neural Network (See Step 4 of the Ipython notebook for more details)
-####1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
+#### 1. Discuss the visual output of your trained network's feature maps. What characteristics did the neural network use to make classifications?
 
 ![alt text][image20]
+
 The feature maps  have detected the circular edges of the sign.
 
 
