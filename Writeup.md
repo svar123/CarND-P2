@@ -46,7 +46,7 @@ The goals / steps of this project are the following:
 
 #### 1. Provide a Writeup / README that includes all the rubric points and how you addressed each one. You can submit your writeup as markdown or pdf. You can use this template as a guide for writing the report. The submission includes the project code.
 
-You're reading it! and here is a link to my [project code](https://github.com/svar123/CarND-P2/Traffic_Sign_Classifier.ipynb)
+You're reading it! and here is a link to my [project code](https://github.com/svar123/CarND-P2/blob/master/Traffic_Sign_Classifier.ipynb)
 
 ### Data Set Summary & Exploration
 
@@ -96,9 +96,9 @@ Mean value =  293.72
 
 The distributions of the classes over the three sets shows similarity with frequency of classes 1, 2, 13 being high and classes 0, 19, 37 being low.
 
-###Design and Test a Model Architecture
+### Design and Test a Model Architecture
 
-####1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
+#### 1. Describe how you preprocessed the image data. What techniques were chosen and why did you choose these techniques? Consider including images showing the output of each preprocessing technique. Pre-processing refers to techniques such as converting to grayscale, normalization, etc. (OPTIONAL: As described in the "Stand Out Suggestions" part of the rubric, if you generated additional data for training, describe why you decided to generate additional data, how you generated the data, and provide example images of the additional data. Then describe the characteristics of the augmented training set like number of images in the set, number of images for each class, etc.)
 
 As a first step, I decided to convert the images to grayscale because this would reduce the complexity of the model and also it is easier for the algorithm to detect edges in grayscale. To do this, I used the image processing common formula :
 Gray = 0.299 Red + 0.587 Green + 0.114 Blue
@@ -155,8 +155,11 @@ My final model results were:
 * test set accuracy of 93.4%
 
 The following is a loss plot for training and validation data.
+
 ![alt text][image6]
+
 And this is the accuracy plot for the training and validation data.
+
 ![alt text][image7]
 
 I started with LeNet architecture as a baseline with no changes. The results showed significant difference between training accuracy(99.2%) and validation accuracy (89%)due to overfitting. Then I tried adding dropout layer before the last fully-connected layer and saw improvement. Adding a second dropout layer after the first fully-connected layer gave the above accuracy results proving the model is working well.
@@ -172,7 +175,7 @@ The images were converted to gray-scale and normalized.
 ![alt text][image9]
 
 
-####2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
+#### 2. Discuss the model's predictions on these new traffic signs and compare the results to predicting on the test set. At a minimum, discuss what the predictions were, the accuracy on these new predictions, and compare the accuracy to the accuracy on the test set (OPTIONAL: Discuss the results in more detail as described in the "Stand Out Suggestions" part of the rubric).
 
 Here are the results of the prediction:
 
